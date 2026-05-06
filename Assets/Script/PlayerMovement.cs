@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
     void Die()
     {
         if(mycollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
-        {
+        {                           
             isAlive = false;
             animator.SetTrigger("dying");
             rigidbody.linearVelocity = deathKick ;

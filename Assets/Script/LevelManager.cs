@@ -52,6 +52,8 @@ public class LevelManager : MonoBehaviour
 
         portalExit.transform.position = loadData.exitPosition;
 
+        
+
         foreach (Vector2 pos in loadData.coin)
         {
             Instantiate(coinPrefabs, pos, Quaternion.identity);
