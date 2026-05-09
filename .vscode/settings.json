@@ -67,5 +67,8 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Shadow Vault.slnx"
+    "dotnet.defaultSolution": "Shadow Vault.slnx",
+    "workbench.editor.autoLockGroups": {
+        "workbench.editor.chatSession": true
+    }
 }
