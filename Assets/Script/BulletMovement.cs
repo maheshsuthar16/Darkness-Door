@@ -3,18 +3,13 @@ using UnityEngine;
 public class BulletMovement : MonoBehaviour
 {
     [SerializeField] private float bulletSpeed = 8f;
-    [SerializeField] private float lifetime = 2f;
+
     private Rigidbody2D rb;
     private Vector2 moveDirection;
 
-    void Awake()
-    {
-       rb = GetComponent<Rigidbody2D>();
-    }
-
     void Start()
     {
-       Destroy(gameObject, lifetime);
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void SetDirection(Vector2 direction)
@@ -35,13 +30,16 @@ public class BulletMovement : MonoBehaviour
 
         if (other.CompareTag("Enemy"))
         {
-          other.GetComponent<Enemy>()?.TakeDamage(1);
+            GameManager.Instance.AddScore(50);
+            Destroy(other.gameObject);
         }
-        
+
         Destroy(gameObject);
-  
     }
 
-
-    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Bullet Collision Hit: " + collision.collider.name);
+        Destroy(gameObject);
+    }
 }
