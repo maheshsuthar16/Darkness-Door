@@ -10,11 +10,14 @@ public class BulletMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.linearVelocity = moveDirection * bulletSpeed; // apply immediately
+
     }
 
     public void SetDirection(Vector2 direction)
     {
         moveDirection = direction.normalized;
+        if (rb != null) rb.linearVelocity = moveDirection * bulletSpeed;
     }
 
     void FixedUpdate()

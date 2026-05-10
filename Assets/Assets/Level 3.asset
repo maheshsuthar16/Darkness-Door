@@ -13,11 +13,23 @@ MonoBehaviour:
   m_Name: Level 3
   m_EditorClassIdentifier: Assembly-CSharp::LoadData
   LevelName: 'Level 3 '
-  spawnPlayerPosition: {x: 0, y: -14.5}
-  exitPosition: {x: 34.7, y: -9.5}
+  spawnPlayerPosition: {x: 40.03, y: -9.4}
+  exitPosition: {x: 82.03, y: 1.38}
   coin:
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
-  enemies: []
+  - {x: 45, y: -11.46}
+  - {x: 41.95, y: -14.58}
+  - {x: 40.59, y: -20.63}
+  - {x: 49.97, y: -13.53}
+  - {x: 54.47, y: -7.36}
+  - {x: 63.85, y: -14.44}
+  - {x: 62.53, y: -18.07}
+  - {x: 39.71, y: -3.45}
+  - {x: 71.7, y: 5.5}
+  - {x: 69.09, y: -12.47}
+  - {x: 75.01, y: -17.39}
+  - {x: 82.67, y: -16.43}
+  - {x: 85.99, y: -14.4}
+  enemies:
+  - {x: 55.55, y: -18.59}
+  - {x: 54.73, y: 0.52}
   levelPrefabs: {fileID: 1957489230804850966, guid: 8851fb29e39e9f94daac4fd22d5ebd7e, type: 3}

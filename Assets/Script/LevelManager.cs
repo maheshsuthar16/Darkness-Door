@@ -69,7 +69,7 @@ public class LevelManager : MonoBehaviour
     public  void LoadNextLevel()
     {   
         int nextLevel = currentLevelIndex+ 1;
-        if(nextLevel < levels.Length)
+        if(nextLevel < levels.Length )
         {
             LoadLevel(nextLevel);
 
